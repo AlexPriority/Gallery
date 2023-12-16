@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="js/gallery.js"></script>
+    <style>
+        /* CSS adicional para ajustar el tamaño de la imagen */
+        #image {
+            background-size: cover;
+        }
+    </style>
+</head>
+<body onload="addTabIndexes()">
+
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
+
+    <!-- Seis imágenes de Unsplash con sus atributos -->
+    <img class="preview" alt="Forest" src="https://source.unsplash.com/600x400/?forest" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="tabFocus(this)" onblur="removeTabFocus(this)" tabindex="0">
+    <img class="preview" alt="Beach" src="https://source.unsplash.com/600x400/?beach" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="tabFocus(this)" onblur="removeTabFocus(this)" tabindex="0">
+    <img class="preview" alt="City" src="https://source.unsplash.com/600x400/?city" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="tabFocus(this)" onblur="removeTabFocus(this)" tabindex="0">
+    <img class="preview" alt="Mountain" src="https://source.unsplash.com/600x400/?mountain" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="tabFocus(this)" onblur="removeTabFocus(this)" tabindex="0">
+    <img class="preview" alt="Car" src="https://source.unsplash.com/600x400/?car" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="tabFocus(this)" onblur="removeTabFocus(this)" tabindex="0">
+    <img class="preview" alt="Dog" src="https://source.unsplash.com/600x400/?dog" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="tabFocus(this)" onblur="removeTabFocus(this)" tabindex="0">
+
+</body>
+</html>
